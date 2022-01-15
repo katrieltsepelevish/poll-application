@@ -8,7 +8,7 @@ const config = require('./config');
 const app = express();
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 
 // Routes
 const routes = require('./routes');

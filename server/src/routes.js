@@ -6,6 +6,6 @@ const checkApiKey = require('./middlewares/checkApiKey');
 
 appRouter.get('/polls', pollController.getByPage);
 appRouter.post('/poll/add-poll', checkApiKey, pollController.add);
-appRouter.post('/poll/:pollId/vote/:option', pollController.vote);
+appRouter.get('/poll/:pollId/vote/:option', pollController.vote);
 
 module.exports = appRouter;

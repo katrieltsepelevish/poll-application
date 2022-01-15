@@ -66,7 +66,7 @@ class PollController {
 
         poll.options[selectedOptionIndex].vote++;
 
-        const updatedPoll = await Poll.findOneAndUpdate({ _id: pollId }, { options: poll.options }, { returnOriginal: true });
+        const updatedPoll = await Poll.findOneAndUpdate({ _id: pollId }, { options: poll.options }, { new: true });
 
         logger.info(`‘New vote casted to poll {${poll._id}}, option: {${option}}`);
 
