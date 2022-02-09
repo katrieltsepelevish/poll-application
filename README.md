@@ -1,5 +1,5 @@
 # poll-application
-Application which displays a list of available polls and users have the ability to vote anonymously, they also have the ability to paginate between polls.
+Application which displays a list of available polls and users can vote anonymously, they also can paginate between polls.
 
 ## API
 Backend API Routes list:
