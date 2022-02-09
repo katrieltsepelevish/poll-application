@@ -2,16 +2,16 @@
 Application which displays a list of available polls and users have the ability to vote anonymously, they also have the ability to paginate between polls.
 
 ## API
-Backend API Routes
+Backend API Routes list:
 
 #### `GET /api/polls?page={page}`
-List all polls including their options and votes with the paginate option.
+* List all polls including their options and votes with the paginate option.
 
 #### `POST /api/poll/add-poll`
-Add a new poll
+* Add a new poll
 
 #### `GET /api/poll/{poll}/vote/{option}`
-Submit a vote to a poll's specific option
+* Submit a vote to a poll's specific option
 
 `poll` = Poll ID
 
